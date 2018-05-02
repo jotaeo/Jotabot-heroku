@@ -80,21 +80,9 @@ async def on_message(message):
         msg="BLAST OFF!! :boom:"
         await client.send_message(message.channel,msg)
 
-        await client.change_status(game=discord.Game(name='helping jotaro program me'))
 
 
 
-
-
-
-
-
-
-
-@bot.command()
-async def joined(member : discord.Member):
-    """Says when a member joined."""
-    await bot.say('{0.name} joined in {0.joined_at}'.format(member))
 
 
 
