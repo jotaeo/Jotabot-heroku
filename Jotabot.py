@@ -2,7 +2,7 @@ import discord
 import time
 from discord.ext import commands
 description = str ("Jotabot! Jotaros personal bot")
-
+TOKEN = 'NDI3MTcwMjk1MjI5NDQ4MTk1.DZgpUA.IVDG3A2mb3owOEKJ0Ez1Frup7YE'
 client = discord.Client()
 bot = commands.Bot(command_prefix='?', description=description)
 
