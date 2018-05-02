@@ -5,7 +5,7 @@ description = str ("Jotabot! Jotaros personal bot")
 
 client = discord.Client()
 bot = commands.Bot(command_prefix='?', description=description)
-
+TOKEN = 'NDI3MTcwMjk1MjI5NDQ4MTk1.DZgpUA.IVDG3A2mb3owOEKJ0Ez1Frup7YE'
 @client.event
 async def on_message(message):
     # we do not want the bot to reply to itself
