@@ -75,8 +75,6 @@ async def on_message(message):
         msg="BLAST OFF!! :boom:"
         await client.send_message(message.channel,msg)
 
-    if message.content.startswith("j!emb"):
-          embed = discord.Embed(title="Jotabot", description="Jota made me , thats all you need to know.", color=0xeee657)
     
 
 
