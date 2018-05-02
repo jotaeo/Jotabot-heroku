@@ -33,17 +33,6 @@ async def on_message(message):
         msg= "my creator. our father. ``the one``".format(message)
         await client.send_message(message.channel,msg)
 
-    if message.content.startswith('jotabot , break'):
-        var=True
-        while var == True:
-            msg= "jotabot.exe has stopped working".format(message)
-            await client.send_message(message.channel,msg)
-            
-     if message.content.startswith('fix'):
-        var=False
-        msg="fixed".format (message)
-        await client.send_message(message.channel,msg)
-
 
 
     if message.content.startswith('j!authlink'):
