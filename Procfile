@@ -1,1 +1,1 @@
-worker:Jotabot.py
+worker:node Jotabot.py
