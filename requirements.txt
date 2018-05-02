@@ -1,0 +1,4 @@
+discord
+time
+pip
+asyncio
