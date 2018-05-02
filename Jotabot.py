@@ -2,7 +2,9 @@ import discord
 import time
 from discord.ext import commands
 description = str ("Jotabot! Jotaros personal bot")
+
 TOKEN = 'NDI3MTcwMjk1MjI5NDQ4MTk1.DZgpUA.IVDG3A2mb3owOEKJ0Ez1Frup7YE'
+
 client = discord.Client()
 bot = commands.Bot(command_prefix='?', description=description)
 
@@ -31,6 +33,10 @@ async def on_message(message):
 
     if message.content.startswith('who is jotaro?'):
         msg= "my creator. our father. ``the one``".format(message)
+        await client.send_message(message.channel,msg)
+
+    while message.content.startswith('jotabot , break'):
+        msg= "jotabot.exe has stopped working".format(message)
         await client.send_message(message.channel,msg)
 
 
@@ -74,7 +80,7 @@ async def on_message(message):
         msg="BLAST OFF!! :boom:"
         await client.send_message(message.channel,msg)
 
-
+        await client.change_status(game=discord.Game(name='helping jotaro program me'))
 
 
 
@@ -106,4 +112,3 @@ async def on_ready():
 
 
 client.run (TOKEN)
-
