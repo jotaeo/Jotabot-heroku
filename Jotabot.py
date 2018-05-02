@@ -2,10 +2,12 @@ import discord
 import time
 from discord.ext import commands
 description = str ("Jotabot! Jotaros personal bot")
-str=(TOKEN)
+
+TOKEN = 'NDI3MTcwMjk1MjI5NDQ4MTk1.DZgpUA.IVDG3A2mb3owOEKJ0Ez1Frup7YE'
 
 client = discord.Client()
 bot = commands.Bot(command_prefix='?', description=description)
+
 @client.event
 async def on_message(message):
     # we do not want the bot to reply to itself
@@ -66,16 +68,6 @@ async def on_message(message):
         time.sleep(1)
         await client.send_message(message.channel,msg)
 
-    if message.content.startswith('j!vfxtest'):
-          msg='``.``'.format(message)
-          time.sleep(0.5)
-          await client.send_message(message.channel,msg)
-          msg='``.``'.format(message)
-          time.sleep(0.5)
-          await client.send_message(message.channel,msg)
-          msg='``.``'.format(message)
-          time.sleep(0.5)
-          await client.send_message(message.channel,msg)
 
     if message.content.startswith('jotabot,launch'):
         rocketvariable=10
@@ -85,8 +77,9 @@ async def on_message(message):
             await client.send_message(message.channel,msg)
             rocketvariable = rocketvariable - 1
 
-        msg="BLAST OFF!!"
+        msg="BLAST OFF!! :boom:"
         await client.send_message(message.channel,msg)
+
 
 
 
@@ -118,4 +111,5 @@ async def on_ready():
 
 
 
-client.run(str(os.environ.get('BOT_TOKEN')))
+client.run (TOKEN)
+
