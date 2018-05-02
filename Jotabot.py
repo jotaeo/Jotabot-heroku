@@ -2,6 +2,7 @@ import discord
 import time
 from discord.ext import commands
 description = str ("Jotabot! Jotaros personal bot")
+str=(TOKEN)
 
 client = discord.Client()
 bot = commands.Bot(command_prefix='?', description=description)
@@ -86,7 +87,6 @@ async def on_message(message):
 
         msg="BLAST OFF!!"
         await client.send_message(message.channel,msg)
-
 
 
 
