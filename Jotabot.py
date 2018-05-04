@@ -27,9 +27,6 @@ async def math (ctx,a:int,b,c:int):
     if b== "/":
         await ctx.send (a/c)
 
-@commands.group(ctx=True)
-async def gtest(ctx):
-    ctx.send("a for hi")
 
 @bot.command()
 async def joined(ctx, *, member: discord.Member):
